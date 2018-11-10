@@ -1,13 +1,17 @@
 // Draw a 10 pointed star from page 205 of
 // Islamic Geometric Design by Eric Broug Published by Thames & Hudson
+// ISBN 978-0-500-51695-9
 // by Rupert Russell
-// artwork on Redbubble see:
-// code on Github at: 
+// 11 November 2018
+// artwork on Redbubble see: https://www.redbubble.com/people/rupertrussell/works/34986546-ten-pointed-kite-star
+// code on Github at: https://github.com/rupertrussell/ten-pointed-kite-star
+// created with Processing see: https://processing.org/
+
 
 float scale = 600;
 
-float xCenter = width /2;
-float yCenter = height /2;
+float xCenter = 700 /2;
+float yCenter = 700 /2;
 
 float[] innerX;
 float[] innerY;
@@ -16,8 +20,8 @@ void setup() {
 
   size(700, 700); // width x height
 
-  innerX = new float[10]; // store x Points for the 10 points on the inner circle
-  innerY = new float[10]; // store y Points for the 10 points on the inner circle
+  innerX = new float[10]; 
+  innerY = new float[10]; 
 
   noFill();
   rectMode(CENTER);
